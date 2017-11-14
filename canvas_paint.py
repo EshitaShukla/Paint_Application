@@ -18,7 +18,7 @@ def x(col):
         python_colour= col
         x1, y1 = ( event.x - 4 ), ( event.y - 4 )
         x2, y2 = ( event.x +4 ), ( event.y + 4 )
-        w.create_rectangle( x1, y1, x2, y2, fill = python_green,outline=col)
+        w.create_rectangle( x1, y1, x2, y2, fill = python_color,outline=col)
 
     w.bind( "<B1-Motion>", paint )
 
