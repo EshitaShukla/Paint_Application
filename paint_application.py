@@ -6,8 +6,6 @@ from tkinter import filedialog
 from PIL import Image
 import pyscreenshot as ImageGrab
 
-#import drawPattern as draw
-
 
 from tkinter.colorchooser import *
 trace = 0 
@@ -96,11 +94,11 @@ class CanvasEventsDemo:
         r.config(menu=b1)
         self.canvas = canvas
         self.drawn  = None
-        self.kinds = canvas.create_oval     # [canvas.create_rectangle]
+        self.kinds = canvas.create_oval     
         
     def onStart(self, event):
-        self.shape = self.kinds             #[0]
-        self.kinds = self.kinds             #[1:] + [:1]
+        self.shape = self.kinds            
+        self.kinds = self.kinds             
         self.start = event
         self.drawn = None
         
